@@ -23,7 +23,7 @@ int main(void){
     int aux = 0;
     pthread_create(&myThread2, NULL, &h1, (void *)&aux);
     pthread_create(&myThread1, NULL, &h1, (void *)&aux);
-    pthread_join(myThread1, NULL);  
+    //pthread_join(myThread1, NULL);  
     pthread_join(myThread2, NULL);  
     printf("O: %d\n",x);
     return(0);
